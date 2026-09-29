@@ -1,0 +1,18 @@
+/target
+Cargo.lock.orig
+
+# Images et firmwares locaux (tâches 0.3-0.5, Vague 0)
+*.img
+esp.img
+VARS.fd
+serie.log
+BOOTX64.EFI
+BOOTAA64.EFI
+BOOTRISCV64.EFI
+
+# Chargeurs Limine précompilés (téléchargés, pas versionnés ici)
+/limine/
+
+# Divers éditeurs et OS
+*.swp
+.DS_Store

@@ -1,0 +1,9 @@
+[package]
+name = "contenants-sdk"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+description = "Contrat des Contenants (pilotes isolés) : risque R0-R3, plages MMIO (cahier §6)."
+
+[dependencies]

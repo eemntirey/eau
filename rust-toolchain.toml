@@ -1,0 +1,11 @@
+# Toolchain épinglée pour la reproductibilité (OUTILS.md §2 : « à privilégier
+# pour compiler la Molécule »). Les cibles et composants ci-dessous sont
+# installés et vérifiés le 29/09/2026.
+[toolchain]
+channel = "nightly-2026-07-10"
+components = ["rust-src", "llvm-tools", "clippy", "rustfmt"]
+targets = [
+    "x86_64-unknown-none",
+    "aarch64-unknown-none",
+    "riscv64gc-unknown-none-elf",
+]

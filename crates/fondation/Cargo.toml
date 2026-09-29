@@ -1,0 +1,9 @@
+[package]
+name = "fondation"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+description = "Le seul endroit du projet où le code unsafe est toléré (cahier §4)."
+
+[dependencies]

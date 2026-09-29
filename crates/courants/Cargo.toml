@@ -1,0 +1,9 @@
+[package]
+name = "courants"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+description = "Canaux typés à quota (écluses), schémas versionnés (cahier §5)."
+
+[dependencies]

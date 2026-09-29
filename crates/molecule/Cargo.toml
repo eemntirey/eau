@@ -1,0 +1,20 @@
+[package]
+name = "molecule"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+description = "La Molécule : micro-noyau immuable, une vingtaine d'appels système (cahier §4)."
+
+[dependencies]
+fondation.workspace = true
+courants.workspace = true
+
+[lib]
+# La Molécule est compilée en rlib ici ; l'artefact de démarrage (tâche 0.4,
+# liaison Limine) sera produit par une invocation dédiée :
+#   cargo rustc -p molecule --crate-type staticlib \
+#     --target x86_64-unknown-none -Z build-std=core,alloc
+# (un crate-type staticlib permanent casse la compilation hôte :
+#  « unwinding panics are not supported without std ».)
+crate-type = ["rlib"]

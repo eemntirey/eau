@@ -1,0 +1,19 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/fondation",
+    "crates/courants",
+    "crates/contenants-sdk",
+    "crates/molecule",
+]
+
+[workspace.package]
+version = "0.0.1"
+edition = "2024"
+license = "Apache-2.0"
+authors = ["Jhonny"]
+
+[workspace.dependencies]
+fondation = { path = "crates/fondation" }
+courants = { path = "crates/courants" }
+contenants-sdk = { path = "crates/contenants-sdk" }
